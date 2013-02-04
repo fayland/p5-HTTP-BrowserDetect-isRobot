@@ -12,7 +12,7 @@ use vars qw/@EXPORT_OK/;
 sub is_robot {
     my ($agent) = @_;
 
-    return 1 if $agent =~ /Googlebot|Baiduspider|Yahoo! Slurp/;
+    return 1 if $agent =~ /Googlebot|Baiduspider|Yahoo! Slurp|Bingbot|MSNbot|altavista|lycos|infoseek|webcrawler|lecodechecker|Ask Jeeves|facebookexternalhit|adsbot-google|ia_archive|FatBot|Xenu Link Sleuth|BlitzBOT|btbot|CatchBot|Charlotte|Discobot|FAST-WebCrawler|FurlBot|Gaisbot|iaskspider|Mediapartners-Google|PycURL|Seekbot|SEOChat|SeznamBot|silk|Sitebot|sogou spider|Sosospider|TweetedTimes|YahooSeeker|YandexBot|Yeti|YodaoBot|YoudaoBot|ZyBorg|Twitterbot/i;
 
     return;
 }
@@ -37,6 +37,6 @@ inspired by L<Plack::Middleware::BotDetector>
 
 take User-Agent as the only argument. return 1 if yes.
 
-patches welcome.
+the regexp is quite incomplete. patches welcome.
 
 1;
