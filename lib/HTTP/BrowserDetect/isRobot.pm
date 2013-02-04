@@ -17,6 +17,10 @@ sub is_robot {
     return;
 }
 
+1;
+
+__END__
+
 =head1 SYNOPSIS
 
     use HTTP::BrowserDetect::isRobot 'is_robot';
@@ -27,7 +31,7 @@ sub is_robot {
 
 =head1 DESCRIPTION
 
-extends L<HTTP::BrowserDetect> with more robots detecting.
+extends L<HTTP::BrowserDetect> with more robot detection.
 
 inspired by L<Plack::Middleware::BotDetector>
 
@@ -38,5 +42,3 @@ inspired by L<Plack::Middleware::BotDetector>
 take User-Agent as the only argument. return 1 if yes.
 
 the regexp is quite incomplete. patches welcome.
-
-1;
