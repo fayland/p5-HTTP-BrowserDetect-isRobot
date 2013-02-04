@@ -61,6 +61,8 @@ inspired by L<Plack::Middleware::BotDetector>
 
 take User-Agent as the only argument. return 1 if yes.
 
+== is_site_robot || is_program_robot
+
 the regexp is quite incomplete. patches welcome.
 
 =head2 is_site_robot
@@ -83,6 +85,6 @@ check if it's from any library of programming languages, like LWP or WWW::Mechan
 
     use HTTP::BrowserDetect::isRobot 'is_program_robot';
 
-    if ( is_program_robot('Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)') ) {
+    if ( is_program_robot('libwww-perl/5.833') ) {
         print "Yes\n";
     }
