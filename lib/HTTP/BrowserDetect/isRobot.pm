@@ -21,7 +21,8 @@ sub is_robot {
 sub is_site_robot {
     my ($agent) = @_;
 
-    return 1 if $agent =~ /Googlebot|Baiduspider|Yahoo! Slurp|Bingbot|MSNbot|altavista|lycos|infoseek|webcrawler|lecodechecker|Ask Jeeves|facebookexternalhit|adsbot-google|ia_archive|FatBot|Xenu Link Sleuth|BlitzBOT|btbot|CatchBot|Charlotte|Discobot|FAST-WebCrawler|FurlBot|Gaisbot|iaskspider|Mediapartners-Google|Seekbot|SEOChat|SeznamBot|silk|Sitebot|sogou spider|Sosospider|TweetedTimes|YahooSeeker|YandexBot|Yeti|YodaoBot|YoudaoBot|ZyBorg|Twitterbot|AhrefsBot|TweetedTimes Bot|TweetmemeBot|bitlybot|ShowyouBot|UnwindFetchor|MetaURI API|PaperLiBot|LinkedInBot|AddThis\.com robot|FriendFeedBot/i;
+    return 1 if $agent =~ /Googlebot|Baiduspider|Yahoo! Slurp|Bingbot|MSNbot|altavista|lycos|infoseek|webcrawler|lecodechecker|Ask Jeeves|facebookexternalhit|adsbot-google|ia_archive|FatBot|Xenu Link Sleuth|BlitzBOT|btbot|CatchBot|Charlotte|Discobot|FAST-WebCrawler|FurlBot|Gaisbot|iaskspider|Mediapartners-Google|Seekbot|SEOChat|SeznamBot|Sitebot|sogou spider|Sosospider|TweetedTimes|YahooSeeker|YandexBot|Yeti|YodaoBot|YoudaoBot|ZyBorg|Twitterbot|AhrefsBot|TweetedTimes Bot|TweetmemeBot|bitlybot|ShowyouBot|UnwindFetchor|MetaURI API|PaperLiBot|LinkedInBot|AddThis\.com robot|FriendFeedBot/i;
+    return 1 if $agent =~ /^silk/i;
 
     return;
 }
