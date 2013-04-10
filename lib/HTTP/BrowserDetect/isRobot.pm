@@ -32,7 +32,7 @@ sub is_program_robot {
 
     return 1 if $agent =~ /libwww-perl|PycURL|EventMachine HttpClient|Apache-HttpClient/;
     return 1 if $agent =~ m{Python-(\w+)/}i;
-    return 1 if $agent =~ m{Java/};
+    return 1 if $agent =~ m{^Java/};
     return 1 if $agent eq 'Ruby';
 
     return;
